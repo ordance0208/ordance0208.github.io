@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import sections from '../../utils/sectionList';
+import { UilBars, UilTimes } from '@iconscout/react-unicons';
+import IconButon from '../IconButon';
 import MobileMenu from '../MobileMenu';
-import NavbarLinks from './components/NavbarLinks';
-import HamburgerButton from './components/HamburgerButton';
 import ThemeButton from './components/ThemeButton/ThemeButton';
 
 const Navbar = () => {
@@ -10,19 +11,39 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='py-3 px-7 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/10 bg-slate-900/50'>
-        <div className='flex items-center justify-between 2xl:max-w-[1440px] xl:max-w-[1144px] mx-auto'>
+      <div className='py-3 px-7 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/30 bg-slate-900/50'>
+        <div className='flex items-center justify-between mx-auto xl:max-w-[1144px] 2xl:max-w-[1440px]'>
           <p className='font-semibold text-xl text-white'>
             <span className='text-accent font-bold'>{'<'}</span>/
             <span className='text-accent font-bold'>{'>'}</span> Ordan Gramatov
           </p>
-          <div className={`flex items-center gap-1 sm:gap-5`}>
-            <NavbarLinks />
+          <div className='flex items-center gap-1 sm:gap-5'>
+            <nav className='hidden list-none gap-6 text-white font-medium lg:flex'>
+              {sections.map((section: string) => (
+                <ul>
+                  <li>
+                    <a
+                      className='hover:text-accent'
+                      href={`#${section.toLowerCase()}`}
+                    >
+                      {section}
+                    </a>
+                  </li>
+                </ul>
+              ))}
+            </nav>
             <ThemeButton />
-            <HamburgerButton
-              hamburgerMenuOpened={hamburgerMenuOpened}
-              setHamburgerMenuOpened={setHamburgerMenuOpened}
-            />
+            <div className='lg:hidden relative z-10'>
+              <IconButon
+                onClick={() => setHamburgerMenuOpened((prev) => !prev)}
+              >
+                {hamburgerMenuOpened ? (
+                  <UilTimes color='#FAFAFA' />
+                ) : (
+                  <UilBars color='#FAFAFA' />
+                )}
+              </IconButon>
+            </div>
           </div>
         </div>
       </div>
