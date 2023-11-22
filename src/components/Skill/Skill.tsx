@@ -2,7 +2,7 @@ import Typograpghy from '../Typography';
 
 interface Props {
   name: string;
-  Icon: any;
+  Icon: React.ElementType;
 }
 
 const Skill = ({ name, Icon }: Props) => {
