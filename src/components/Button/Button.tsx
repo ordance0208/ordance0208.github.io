@@ -16,8 +16,8 @@ const Button = ({
   return (
     <button
       className={
-        `px-5 py-2 rounded-[11px] font-semibold text-[17px] text-[#FAFAFA] hover:opacity-90 transition-colors ${
-          variant === 'primary' ? 'bg-accent' : 'border-2 border-accent'
+        `px-5 py-2 rounded-[11px] font-semibold text-[17px] text-dark hover:opacity-90 transition-colors ${
+          variant === 'primary' ? 'bg-accent text-light' : 'border-2 border-accent dark:text-light'
         } ` + className
       }
       onClick={onClick}
