@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import Button from '../../components/Button';
-import me from '../../assets/img/me.jpg';
 import Scroller from './components/Scroller';
 import Background from './components/Background';
-import Typograpghy from '../../components/Typography/Typograpghy';
+import Typograpghy from '../../components/Typography';
+import me from '../../assets/img/me.jpg';
 
 const Hero = () => {
   const content = useRef<HTMLDivElement>(null);
