@@ -54,9 +54,9 @@ const About = () => {
           </div>
         </div>
         <div>
-          <p className='text-white text-[28px] text-center lg:text-[42px] font-bold mt-[128px] mb-2 lg:mb-5'>
+          <Typograpghy className='text-[28px] text-center lg:text-[42px] font-bold mt-[128px] mb-2 lg:mb-5'>
             Work Experience
-          </p>
+          </Typograpghy>
           <div className='flex justify-center'>
             <div className='w-2 rounded-md h-[750px] bg-[#eeeeee] relative'>
               {experienceList.map((job: IJob, index: number) => (
