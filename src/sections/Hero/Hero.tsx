@@ -23,12 +23,12 @@ const Hero = () => {
   return (
     <section
       id='hero'
-      className='tall:py-[100px] tall:h-auto h-screen bg-light dark:bg-bg-dark relative overflow-hidden pt-[56px]'
-      onMouseMove={handleMouseMove}
+      className='h-screen bg-light dark:bg-bg-dark relative overflow-hidden pt-[56px] tall:py-[100px] tall:h-auto'
+      // onMouseMove={handleMouseMove}
     >
       <Background />
       <div
-        className='animate-fly-in flex gap-10 justify-center items-center flex-col h-full max-w-[90%] m-auto lg:flex-row xl:justify-between xl:max-w-[1144px] xl:flex-row 2xl:max-w-[1440px] tall:justify-normal'
+        className='relative z-10 flex gap-10 justify-center items-center flex-col h-full max-w-[90%] m-auto lg:flex-row xl:justify-between xl:max-w-[1144px] xl:flex-row 2xl:max-w-[1440px] tall:justify-normal animate-fly-in'
         ref={content}
       >
         <div className='w-[100%] lg:flex-1 xl:max-w-[720px]'>
@@ -45,17 +45,17 @@ const Hero = () => {
             I am a <span className='text-accent'>Full-Stack</span> Developer.
             💻📱
           </Typograpghy>
-          <Typograpghy className='text-center text-[14px] font-normal lg:text-left xl:text-[18px] xs:text-[18px]'>
+          <Typograpghy className='text-center text-[14px] font-normal xs:text-[18px] lg:text-left xl:text-[18px]'>
             From designing elegant front-end interfaces to architecting robust
             back-end systems, I thrive on transforming ideas into innovative and
             user-centric solutions. Let's code the future together! 🚀
           </Typograpghy>
           <div className='flex gap-5 mt-4 justify-center lg:justify-start'>
             <a href='#contact'>
-              <Button className='px-2 py-1 text-[15px]'>Get in touch</Button>
+              <Button className='text-[15px]'>Get in touch</Button>
             </a>
             <a href={resume} target='_blank' rel='noopener noreferrer'>
-              <Button className='px-1 py-1 text-[15px]' variant='secondary'>
+              <Button className='text-[15px]' variant='secondary'>
                 Resume
               </Button>
             </a>
@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
         <div>
           <img
-            className='rounded-full w-[250px] h-[250px] relative z-[1] border-accent dark:border-white 2xl:w-[500px] 2xl:h-[500px] select-none xl:w-[350px] xl:h-[350px] animate-grow border-4'
+            className='rounded-full w-[250px] h-[250px] relative z-[1] border-4 border-accent dark:border-light select-none xl:w-[350px] xl:h-[350px] 2xl:w-[500px] 2xl:h-[500px] animate-grow'
             src={me}
             alt='me'
           />
