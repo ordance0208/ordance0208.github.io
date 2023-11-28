@@ -11,16 +11,19 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='py-3 px-7 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/30 bg-slate-900/50'>
-        <div className='flex items-center justify-between mx-auto xl:max-w-[1144px] 2xl:max-w-[1440px]'>
-          <p className='font-semibold text-xl text-white'>
-            <span className='text-accent font-bold'>{'<'}</span>/
-            <span className='text-accent font-bold'>{'>'}</span> Ordan Gramatov
-          </p>
+      <div className='py-3 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/30 bg-slate-900/50'>
+        <div className='flex items-center justify-between mx-auto max-w-[90%] xl:max-w-[1144px] 2xl:max-w-[1440px]'>
+          <a href='#hero'>
+            <p className='font-semibold text-xl text-white'>
+              <span className='text-accent font-bold'>{'<'}</span>/
+              <span className='text-accent font-bold'>{'>'}</span> Ordan
+              Gramatov
+            </p>
+          </a>
           <div className='flex items-center gap-1 sm:gap-5'>
             <nav className='hidden list-none gap-6 text-white font-medium lg:flex'>
               {sections.map((section: string) => (
-                <ul>
+                <ul key={section}>
                   <li>
                     <a
                       className='hover:text-accent'
@@ -33,7 +36,7 @@ const Navbar = () => {
               ))}
             </nav>
             <ThemeButton />
-            <div className='lg:hidden relative z-10'>
+            <div className='lg:hidden relative z-10 max-h-[40px]'>
               <IconButon
                 onClick={() => setHamburgerMenuOpened((prev) => !prev)}
               >
@@ -47,7 +50,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <MobileMenu hamburgerMenuOpened={hamburgerMenuOpened} />
+      <MobileMenu
+        hamburgerMenuOpened={hamburgerMenuOpened}
+        setHamburgerMenuOpened={setHamburgerMenuOpened}
+      />
     </>
   );
 };
