@@ -1,9 +1,7 @@
-import React from 'react';
-
 const IconButton = ({ children, onClick, className }: any) => {
   return (
     <div
-      className='p-2 hover:bg-[#3333334d] hover:cursor-pointer rounded-full'
+      className='p-2 hover:bg-[#3333334d] hover:cursor-pointer rounded-full inline-block'
       onClick={onClick}
     >
       {children}
