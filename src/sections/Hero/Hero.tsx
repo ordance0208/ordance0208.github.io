@@ -4,6 +4,7 @@ import Scroller from './components/Scroller';
 import Background from './components/Background';
 import Typograpghy from '../../components/Typography';
 import me from '../../assets/img/me.jpg';
+import resume from '../../assets/pdf/resume.pdf';
 
 const Hero = () => {
   const content = useRef<HTMLDivElement>(null);
@@ -21,7 +22,8 @@ const Hero = () => {
 
   return (
     <section
-      className='tall:py-[100px] tall:h-auto h-screen bg-light dark:bg-[#090e19] relative overflow-hidden pt-[56px]'
+      id='hero'
+      className='tall:py-[100px] tall:h-auto h-screen bg-light dark:bg-bg-dark relative overflow-hidden pt-[56px]'
       onMouseMove={handleMouseMove}
     >
       <Background />
@@ -49,10 +51,14 @@ const Hero = () => {
             user-centric solutions. Let's code the future together! 🚀
           </Typograpghy>
           <div className='flex gap-5 mt-4 justify-center lg:justify-start'>
-            <Button className='px-2 py-1 text-[15px]'>Get in touch</Button>
-            <Button className='px-1 py-1 text-[15px]' variant='secondary'>
-              Resume
-            </Button>
+            <a href='#contact'>
+              <Button className='px-2 py-1 text-[15px]'>Get in touch</Button>
+            </a>
+            <a href={resume} target='_blank' rel='noopener noreferrer'>
+              <Button className='px-1 py-1 text-[15px]' variant='secondary'>
+                Resume
+              </Button>
+            </a>
           </div>
         </div>
         <div>
