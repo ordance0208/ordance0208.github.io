@@ -3,9 +3,9 @@ import { UilMouseAlt, UilAngleDoubleDown } from '@iconscout/react-unicons';
 const Scroller = () => {
   return (
     <a href='#about'>
-      <div className='hidden absolute top-[90%] 2xl:top-[85%] xl:top-[85%] left-[50%] translate-x-[-50%] lg:flex 2xl:flex flex-col hover:cursor-pointer animate-scroll'>
-        <UilMouseAlt className='xs:w-[36px] xs:h-[36px] xl:w-[42px] xl:h-[42px] text-dark dark:text-light' />
-        <UilAngleDoubleDown className='xs:w-[36px] xs:h-[36px] xl:w-[42px] xl:h-[42px] text-dark dark:text-light' />
+      <div className='hidden absolute z-10 top-[90%] left-[50%] translate-x-[-50%] flex-col hover:cursor-pointer lg:flex xl:top-[85%] 2xl:top-[85%] animate-scroll'>
+        <UilMouseAlt className='text-dark dark:text-light xl:w-[36px] xl:h-[36px] ' />
+        <UilAngleDoubleDown className='text-dark dark:text-light xl:w-[36px] xl:h-[36px] ' />
       </div>
     </a>
   );
