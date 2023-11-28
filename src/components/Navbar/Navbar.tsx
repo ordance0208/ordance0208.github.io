@@ -4,6 +4,7 @@ import { UilBars, UilTimes } from '@iconscout/react-unicons';
 import IconButon from '../IconButon';
 import MobileMenu from '../MobileMenu';
 import ThemeButton from './components/ThemeButton/ThemeButton';
+import Typograpghy from '../Typography/Typograpghy';
 
 const Navbar = () => {
   const [hamburgerMenuOpened, setHamburgerMenuOpened] =
@@ -11,14 +12,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='py-3 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/30 bg-slate-900/50'>
+      <div className='py-3 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/30 bg-white/30 dark:bg-slate-900/50'>
         <div className='flex items-center justify-between mx-auto max-w-[90%] xl:max-w-[1144px] 2xl:max-w-[1440px]'>
           <a href='#hero'>
-            <p className='font-semibold text-xl text-white'>
+            <Typograpghy className='font-semibold text-[20px]'>
               <span className='text-accent font-bold'>{'<'}</span>/
               <span className='text-accent font-bold'>{'>'}</span> Ordan
               Gramatov
-            </p>
+            </Typograpghy>
           </a>
           <div className='flex items-center gap-1 sm:gap-5'>
             <nav className='hidden list-none gap-6 text-white font-medium lg:flex'>
@@ -26,7 +27,7 @@ const Navbar = () => {
                 <ul key={section}>
                   <li>
                     <a
-                      className='hover:text-accent'
+                      className='text-dark dark:text-light hover:text-accent'
                       href={`#${section.toLowerCase()}`}
                     >
                       {section}
@@ -36,14 +37,14 @@ const Navbar = () => {
               ))}
             </nav>
             <ThemeButton />
-            <div className='lg:hidden relative z-10 max-h-[40px]'>
+            <div className='relative z-10 max-h-[40px] lg:hidden'>
               <IconButon
                 onClick={() => setHamburgerMenuOpened((prev) => !prev)}
               >
                 {hamburgerMenuOpened ? (
-                  <UilTimes color='#FAFAFA' />
+                  <UilTimes className='text-dark dark:text-light' />
                 ) : (
-                  <UilBars color='#FAFAFA' />
+                  <UilBars className='text-dark dark:text-light' />
                 )}
               </IconButon>
             </div>
