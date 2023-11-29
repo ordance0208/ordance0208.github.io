@@ -4,6 +4,7 @@ import Background from './components/Background';
 import Container from '../../components/Container';
 import Projects from './components/Projects';
 import ProjectDialog from './components/ProjectDialog';
+import Typograpghy from '../../components/Typography';
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
@@ -29,9 +30,12 @@ const Portfolio = () => {
       >
         <Background />
         <Container title='Portfolio' className='flex flex-col h-full pt-5'>
-          <p className='text-accent font-semibold text-[28px] mb-3'>
+          <Typograpghy
+            textColor='text-accent'
+            className='font-semibold text-[28px] mb-3'
+          >
             Some of my projects
-          </p>
+          </Typograpghy>
           <Projects setSelectedProject={setSelectedProject} />
         </Container>
       </section>
