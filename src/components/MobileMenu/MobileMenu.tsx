@@ -1,5 +1,5 @@
 import sections from '../../utils/sectionList';
-import { UilLinkedin, UilGithub, UilFacebook } from '@iconscout/react-unicons';
+import SocialLinks from '../SocialLinks';
 
 interface Props {
   hamburgerMenuOpened: boolean;
@@ -33,9 +33,7 @@ const MobileMenu = ({ hamburgerMenuOpened, setHamburgerMenuOpened }: Props) => {
           hamburgerMenuOpened ? 'animate-fly-in-delay' : ''
         } tall:top-[75%] lg:hidden`}
       >
-        <UilLinkedin className='text-accent' size={42} />
-        <UilGithub className='text-accent' size={42} />
-        <UilFacebook className='text-accent' size={42} />
+        <SocialLinks />
       </div>
     </nav>
   );
