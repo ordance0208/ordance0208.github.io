@@ -1,7 +1,9 @@
+import ISkill from "./Skill";
+
 interface IProject {
   name: string;
   description: string;
-  technologiesUsed: string[];
+  technologiesUsed: ISkill[];
   screenshots: string[];
   githubLink: string;
   liveDemo?: string;
