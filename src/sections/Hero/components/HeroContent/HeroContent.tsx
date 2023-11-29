@@ -1,4 +1,4 @@
-import Typograpghy from '../../../../components/Typography';
+import Typography from '../../../../components/Typography';
 import Button from '../../../../components/Button';
 import me from '../../../../assets/img/me.jpg';
 import resume from '../../../../assets/pdf/resume.pdf';
@@ -7,23 +7,23 @@ const HeroContent = () => {
   return (
     <>
       <div className='w-[100%] lg:flex-1 xl:max-w-[720px]'>
-        <Typograpghy
+        <Typography
           variant='h1'
           className='text-center leading-[32px] text-[24px] font-bold mb-1 lg:text-left lg:text-[28px] xl:leading-[56px] xl:text-[56px] xl:mb-0'
         >
           Hi, my name is <span className='text-accent'>Ordan.</span>
-        </Typograpghy>
-        <Typograpghy
+        </Typography>
+        <Typography
           variant='h3'
           className='text-center text-[20px] font-semibold mb-3 lg:text-left xl:text-[36px]'
         >
           I am a <span className='text-accent'>Full-Stack</span> Developer. 💻📱
-        </Typograpghy>
-        <Typograpghy className='text-center text-[14px] font-normal xs:text-[18px] lg:text-left xl:text-[18px]'>
+        </Typography>
+        <Typography className='text-center text-[14px] font-normal xs:text-[18px] lg:text-left xl:text-[18px]'>
           From designing elegant front-end interfaces to architecting robust
           back-end systems, I thrive on transforming ideas into innovative and
           user-centric solutions. Let's code the future together! 🚀
-        </Typograpghy>
+        </Typography>
         <div className='flex gap-5 mt-4 justify-center lg:justify-start'>
           <a href='#contact'>
             <Button className='text-[15px]'>Get in touch</Button>

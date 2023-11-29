@@ -5,7 +5,7 @@ interface Props {
   textColor?: string;
 }
 
-const Typograpghy = ({ children, variant = 'p', className, textColor }: Props) => {
+const Typography = ({ children, variant = 'p', className, textColor }: Props) => {
   const themeModeClasses = `${textColor ? textColor : 'text-dark dark:text-light'} ${className}`;
 
   const renderElement = () => {
@@ -30,4 +30,4 @@ const Typograpghy = ({ children, variant = 'p', className, textColor }: Props) =
   return <>{renderElement()}</>;
 };
 
-export default Typograpghy;
+export default Typography;

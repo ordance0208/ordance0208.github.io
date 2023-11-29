@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ThemeButton from './components/ThemeButton/ThemeButton';
 import HamburgerButton from './components/HamburgerButton';
 import NavbarLinks from './components/NavbarLinks';
-import Typograpghy from '../Typography/';
+import Typography from '../Typography/';
 import MobileMenu from '../MobileMenu';
 import Container from '../Container';
 
@@ -12,14 +12,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='py-3 fixed w-full backdrop-blur-sm top-0 right-0 z-10 border-b border-slate-900/30 bg-white/30 dark:bg-slate-900/50'>
+      <div className='py-3 fixed w-full backdrop-blur-sm top-0 right-0 z-30 border-b border-slate-900/30 bg-white/30 dark:bg-slate-900/50'>
         <Container className='flex items-center justify-between'>
           <a href='#hero'>
-            <Typograpghy className='font-semibold text-[20px]'>
+            <Typography className='font-semibold text-[20px]'>
               <span className='text-accent font-bold'>{'<'}</span>/
               <span className='text-accent font-bold'>{'>'}</span> Ordan
               Gramatov
-            </Typograpghy>
+            </Typography>
           </a>
           <div className='flex items-center gap-1 sm:gap-5'>
             <NavbarLinks />

@@ -1,5 +1,5 @@
 import IJob from '../../models/Job';
-import Typograpghy from '../Typography/Typograpghy';
+import Typography from '../Typography/Typography';
 
 interface Props {
   job: IJob;
@@ -13,17 +13,17 @@ const ExperienceBox = ({
       className='p-4 bg-accent relative
       } rounded-xl'
     >
-      <Typograpghy textColor='text-light' className='font-bold text-[20px] lg:text-[24px]'>{role}</Typograpghy>
-      <Typograpghy textColor='text-[lightgray]' className='text-[16px] lg:text-[18px] font-semibold'>
+      <Typography textColor='text-light' className='font-bold text-[20px] lg:text-[24px]'>{role}</Typography>
+      <Typography textColor='text-[lightgray]' className='text-[16px] lg:text-[18px] font-semibold'>
         {`${employer} - ${type} (${arrangement}) ${startDate} - ${endDate}`}
-      </Typograpghy>
-      <Typograpghy textColor='text-light'>
+      </Typography>
+      <Typography textColor='text-light'>
         {description.map((desc: string) => (
           <>
             {`- ${desc}`} <br />
           </>
         ))}
-      </Typograpghy>
+      </Typography>
       <div
         className={`absolute rounded-full h-[20px] w-[20px] bg-accent top-[50%] translate-y-[-50%] left-[-44px]`}
       ></div>
