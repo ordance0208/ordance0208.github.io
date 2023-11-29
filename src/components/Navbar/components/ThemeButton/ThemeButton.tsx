@@ -8,9 +8,9 @@ const ThemeButton = () => {
   return (
     <IconButon onClick={toggleTheme}>
       {theme === 'dark' ? (
-        <UilSun color='#FAFAFA' />
+        <UilSun className='text-dark dark:text-light' />
       ) : (
-        <UilMoon color='#FAFAFA' />
+        <UilMoon className='text-dark dark:text-light' />
       )}
     </IconButon>
   );
