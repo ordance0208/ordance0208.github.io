@@ -9,7 +9,7 @@ interface Props {
 const MobileMenu = ({ hamburgerMenuOpened, setHamburgerMenuOpened }: Props) => {
   return (
     <nav
-      className={`list-none text-white font-medium fixed top-[65px] left-0 w-screen h-[calc(100vh-65px)] bg-light dark:bg-slate-900 flex flex-col justify-center items-center text-[32px] gap-10 z-10
+      className={`list-none text-white font-medium fixed top-[65px] left-0 w-screen h-[calc(100vh-65px)] bg-light dark:bg-slate-900 flex flex-col justify-center items-center text-[32px] gap-10 z-30
   ${hamburgerMenuOpened ? 'animate-fly-in' : 'animate-fly-out'} tall:flex-row lg:hidden`}
     >
       {sections.map((section: string) => (
@@ -20,7 +20,7 @@ const MobileMenu = ({ hamburgerMenuOpened, setHamburgerMenuOpened }: Props) => {
           }`}
         >
           <a
-            className='text-dark dark:text-light hover:text-accent'
+            className='text-dark dark:text-light dark:hover:text-accent hover:text-accent'
             href={`#${section.toLowerCase()}`}
             onClick={() => setHamburgerMenuOpened(false)}
           >
