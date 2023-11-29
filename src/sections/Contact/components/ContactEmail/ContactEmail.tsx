@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import copy from 'copy-to-clipboard';
 import Button from '../../../../components/Button';
 import Typography from '../../../../components/Typography';
 
@@ -14,7 +15,7 @@ const ContactEmail = () => {
   }, [copied]);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText('ordance01@yahoo.com');
+    copy('ordance01@yahoo.com');
     setCopied(true);
   };
 
