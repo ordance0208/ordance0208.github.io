@@ -13,7 +13,7 @@ const experienceList: Job[] = [
       'Agile Methodologies',
       'Design Pattern and Software Architectures',
       'Automated Tests',
-    ],
+    ],    
     startDate: 'June 2022',
     endDate: 'October 2022',
   },
@@ -30,7 +30,7 @@ const experienceList: Job[] = [
       'Conducted thorough testing and debugging of software to identify and fix reported bugs',
     ],
     startDate: 'October 2022',
-    endDate: 'July 202',
+    endDate: 'October 2023',
   },
 ];
 
