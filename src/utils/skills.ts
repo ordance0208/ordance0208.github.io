@@ -9,6 +9,7 @@ import Node from '../assets/svg/Node';
 import Express from '../assets/svg/Express';
 import Mongo from '../assets/svg/Mongo';
 import Git from '../assets/svg/Git';
+import ISkill from '../models/Skill';
 
 const skills = [
   {
@@ -52,13 +53,16 @@ const skills = [
     icon: Mongo,
   },
   {
-    name: 'Firebase',
-    icon: Mongo,
-  },
-  {
     name: 'Git',
     icon: Git,
   },
 ];
+
+export const namedSkills: { [key: string]: ISkill } = skills.reduce(
+  (acc, current: ISkill) => {
+    return { ...acc, [current.name.split(' ')[0].toLowerCase()]: current };
+  },
+  {}
+);
 
 export default skills;
