@@ -38,7 +38,7 @@ module.exports = {
       },
       screens: {
         xs: '380px',
-        tall: { raw: '(max-height: 540px)' },
+        'mobile-horizontal': { raw: '(max-height: 540px)' },
       },
     },
   },

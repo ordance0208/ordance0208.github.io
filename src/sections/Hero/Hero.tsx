@@ -21,11 +21,11 @@ const Hero = () => {
   return (
     <section
       id='hero'
-      className='h-screen bg-light dark:bg-bg-dark relative overflow-hidden pt-[56px] tall:py-[100px] tall:h-auto'
+      className='h-screen bg-light dark:bg-bg-dark relative overflow-hidden pt-[56px] mobile-horizontal:py-[100px] mobile-horizontal:h-auto'
       // onMouseMove={handleMouseMove}
     >
       <Background />
-      <Container className='relative z-10 flex gap-10 justify-center items-center flex-col h-full lg:flex-row xl:justify-between xl:flex-row tall:justify-normal animate-fly-in'>
+      <Container className='relative z-10 flex gap-10 justify-center items-center flex-col h-full lg:flex-row xl:justify-between xl:flex-row mobile-horizontal:justify-normal animate-fly-in'>
         <HeroContent />
       </Container>
       <Scroller />
