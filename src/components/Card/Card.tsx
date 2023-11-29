@@ -1,5 +1,5 @@
-import Button from '../Button';
 import IProject from '../../models/Project';
+import Button from '../Button';
 import Typography from '../Typography';
 
 interface Props {
