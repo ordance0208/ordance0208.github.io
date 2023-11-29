@@ -7,7 +7,7 @@ const NavbarLinks = () => {
         <ul key={section}>
           <li>
             <a
-              className='text-dark dark:text-light hover:text-accent'
+              className='text-dark dark:text-light dark:hover:text-accent hover:text-accent'
               href={`#${section.toLowerCase()}`}
             >
               {section}
