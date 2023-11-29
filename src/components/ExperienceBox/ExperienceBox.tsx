@@ -1,37 +1,31 @@
 import IJob from '../../models/Job';
+import Typograpghy from '../Typography/Typograpghy';
 
 interface Props {
-  index: number;
   job: IJob;
 }
 
 const ExperienceBox = ({
-  index,
   job: { role, employer, type, arrangement, description, startDate, endDate },
 }: Props) => {
   return (
     <div
-      className={`p-3 bg-accent absolute ${index ? 'top-[350px]' : 'top-12'} ${
-        index ? 'right-10' : 'left-10'
-      } w-[600px] rounded-md drop-shadow-lg`}
+      className='p-4 bg-accent relative
+      } rounded-xl'
     >
-      <p className='font-bold text-white text-[24px]'>{role}</p>
-      <p className='text-[lightgray] text-[18px]'>
+      <Typograpghy textColor='text-light' className='font-bold text-[20px] lg:text-[24px]'>{role}</Typograpghy>
+      <Typograpghy textColor='text-[lightgray]' className='text-[16px] lg:text-[18px] font-semibold'>
         {`${employer} - ${type} (${arrangement}) ${startDate} - ${endDate}`}
-      </p>
-      <p className='text-white text-[17px]'>
-        {description.map((item: string) => (
+      </Typograpghy>
+      <Typograpghy textColor='text-light'>
+        {description.map((desc: string) => (
           <>
-            {'- '}
-            {item}
-            <br />
+            {`- ${desc}`} <br />
           </>
         ))}
-      </p>
+      </Typograpghy>
       <div
-        className={`absolute rounded-full h-[24px] w-[24px] bg-accent top-[50%] translate-y-[-50%] ${
-          index ? 'right-[-48px]' : 'left-[-48px]'
-        }`}
+        className={`absolute rounded-full h-[20px] w-[20px] bg-accent top-[50%] translate-y-[-50%] left-[-44px]`}
       ></div>
     </div>
   );
