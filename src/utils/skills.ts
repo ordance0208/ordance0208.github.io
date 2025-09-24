@@ -1,7 +1,7 @@
 import Html from '../assets/svg/Html';
 import Css from '../assets/svg/Css';
 import Tailwind from '../assets/svg/Tailwind';
-// import Mui from '../assets/svg/Mui';
+import Mui from '../assets/svg/Mui';
 import Javascript from '../assets/svg/JavaScript';
 import Typescript from '../assets/svg/Typescript';
 import React from '../assets/svg/React';
@@ -27,10 +27,10 @@ const skills = [
     name: 'Tailwind',
     icon: Tailwind,
   },
-  // {
-  //   name: 'Mui',
-  //   icon: Mui,
-  // },
+  {
+    name: 'Mui',
+    icon: Mui,
+  },
   {
     name: 'JavaScript',
     icon: Javascript,
