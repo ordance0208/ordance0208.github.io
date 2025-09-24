@@ -20,16 +20,14 @@ const HeroContent = () => {
           I am a <span className='text-accent'>Full-Stack</span> Developer. 💻📱
         </Typography>
         <Typography className='text-center text-[14px] font-normal xs:text-[18px] lg:text-left xl:text-[18px]'>
-          From designing elegant front-end interfaces to architecting robust
-          back-end systems, I thrive on transforming ideas into innovative and
-          user-centric solutions. Let's code the future together! 🚀
+          I am highly adaptable, comfortable with problem-solving across the stack, and able to deliver reliable, high-quality results. I enjoy working in collaborative teams, learning new tools quickly, and building products that provide real value to users. 🚀
         </Typography>
         <div className='flex gap-5 mt-4 justify-center lg:justify-start'>
           <a href='#contact'>
-            <Button className='text-[15px]'>Get in touch</Button>
+            <Button className='text-[15px] py-3'>Get in touch</Button>
           </a>
           <a href={resume} target='_blank' rel='noopener noreferrer'>
-            <Button className='text-[15px]' variant='secondary'>
+            <Button className='text-[15px] py-[11px]' variant='secondary'>
               Resume
             </Button>
           </a>

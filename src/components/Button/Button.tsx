@@ -20,7 +20,7 @@ const Button = ({
       className={`px-5 py-2 rounded-[11px] font-semibold text-dark hover:opacity-90 transition-colors ${
         variant === 'primary'
           ? 'bg-accent text-light'
-          : 'border-2 border-accent dark:text-light py-[6px]'
+          : 'border-2 border-accent dark:text-light'
       } ${className}`}
       onClick={onClick}
       disabled={disabled}

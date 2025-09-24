@@ -12,8 +12,8 @@ const Summary = () => {
       />
       <div className='flex-2 flex flex-col mt-4 lg:ml-10 lg:mt-0'>
         <Typography className='text-[18px] lg:text-[20px] leading-7'>
-          Hello 👋, My name is Ordan Gramatov, I am a 22-year-old Full-Stack
-          Mobile & Web Developer based in Veles, Macedonia. Started off my career as a
+          Hello 👋, I am Ordan Gramatov, a 24-year-old Full-Stack
+          Software Developer based in Veles, North Macedonia. Started off my career as a
           Front-End developer where I've honed my skills in creating user-friendly
           and visually appealing interfaces with amazing functionality. Transitioning into Full-Stack
           development has been an exciting journey. It's allowed me to
