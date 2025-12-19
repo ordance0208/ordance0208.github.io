@@ -1,6 +1,6 @@
 import Typography from '../../../../components/Typography';
 import Button from '../../../../components/Button';
-import me from '../../../../assets/img/me.jpg';
+import me from '../../../../assets/img/me.png';
 import resume from '../../../../assets/pdf/resume.pdf';
 
 const HeroContent = () => {
@@ -35,7 +35,7 @@ const HeroContent = () => {
       </div>
       <div>
         <img
-          className='rounded-full w-[250px] h-[250px] relative z-[1] border-4 border-accent dark:border-light select-none xl:w-[350px] xl:h-[350px] 2xl:w-[500px] 2xl:h-[500px] animate-grow'
+          className='rounded-full object-cover w-[250px] h-[250px] relative z-[1] border-4 border-accent dark:border-light select-none xl:w-[350px] xl:h-[350px] 2xl:w-[500px] 2xl:h-[500px] animate-grow'
           src={me}
           alt='portrait of me'
         />
